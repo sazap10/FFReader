@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        android:id="@+id/item_download"
+        android:icon="@drawable/ic_action_av_download"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_download"
+        android:titleCondensed="@string/action_download">
+    </item>
+
+</menu>

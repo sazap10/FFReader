@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/ic_menu_search"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:title="@string/action_search"/>
+    <item
+        android:id="@+id/sort_alpha"
+        android:icon="@drawable/ic_action_sort_alpha"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/sort_alpha"/>
+    <item
+        android:id="@+id/sort_number"
+        android:icon="@drawable/ic_action_sort_by_size"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/sort_number"/>
+
+</menu>

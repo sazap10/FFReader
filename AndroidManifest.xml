@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.sachinpan.ffreader"
+    android:versionCode="1"
+    android:versionName="0.1.4" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="de.sachinpan.ffreader.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="de.sachinpan.ffreader.ReaderActivity" >
+        </activity>
+        <activity
+            android:name="de.sachinpan.ffreader.BrowseActivity"
+            android:label="@string/title_activity_browse"
+            android:parentActivityName="de.sachinpan.ffreader.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.sachinpan.ffreader.MainActivity" />
+        </activity>
+        <activity
+            android:name="de.sachinpan.ffreader.ItemsActivity"
+            android:label="@string/title_activity_items"
+            android:parentActivityName="de.sachinpan.ffreader.BrowseActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.sachinpan.ffreader.BrowseActivity" />
+        </activity>
+        <activity
+            android:name="de.sachinpan.ffreader.StoriesActivity"
+            android:label="@string/title_activity_stories"
+            android:parentActivityName="de.sachinpan.ffreader.ItemsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.sachinpan.ffreader.ItemsActivity" />
+        </activity>
+        <activity
+            android:name="de.sachinpan.ffreader.LibraryActivity"
+            android:label="@string/title_activity_library"
+            android:parentActivityName="de.sachinpan.ffreader.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.sachinpan.ffreader.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
